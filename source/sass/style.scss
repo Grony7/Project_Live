@@ -1,6 +1,24 @@
+//Global
 @import "blocks/global.scss";
 @import "blocks/button.scss";
 
+//Main
 @import "blocks/main-container.scss";
 @import "blocks/page.scss";
 @import "blocks/title.scss";
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/montserrat.woff2") format("woff2"), url("../fonts/montserrat.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monserrat";
+  src: url("../fonts/montserratbold.woff2") format("woff2"), url("../fonts/montserratbold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
