@@ -15,6 +15,10 @@
   text-decoration: none;
   color: $color-white;
   text-align: end;
+
+  &:active {
+    color: $color-accent;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -35,6 +39,15 @@
     text-decoration: none;
     color: $color-text-second;
     text-align: center;
+
+    &:hover {
+      color: $color-text-first;
+      opacity: 0.7;
+    }
+
+    &:active {
+      color: $color-accent;
+    }
   }
 }
 
