@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Project_Live</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -13,42 +14,44 @@
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/logo.svg" width="63" height="20" alt="Логотип">
       </a>
-
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__button" href="catalog.html">
-              Портфолио
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__button" href="form.html">
-              Виды работ
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__button" href="form.html">
-              О фотостудии
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__button" href="form.html">
-              Услуги и цены
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__button" href="form.html">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </div>
-      <a class="main-header__logo">
-        +7 (499) 344 60 91
-
+      <a class="main-header__phone" href="tel:+79999999999">
+        +7 (999) 999 99 99
+        <svg class="main-header__phone-icon" width="20" height="20">
+          <use href="img/sprite.svg#icon-phone"></use>
+        </svg>
       </a>
-
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__button" href="catalog.html">
+                Портфолио
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__button" href="form.html">
+                Виды работ
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__button" href="form.html">
+                О фотостудии
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__button" href="form.html">
+                Услуги и цены
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__button" href="form.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
 
@@ -57,6 +60,6 @@
 
   <footer class="main-footer">
   </footer>
-
+  <script src="js/menu-toggle.js"></script>
 </body>
 </html>

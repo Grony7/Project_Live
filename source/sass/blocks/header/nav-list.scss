@@ -1,0 +1,18 @@
+.nav-list {
+  @include list-reset;
+  margin: 0;
+}
+
+.nav-list__item {
+  margin-bottom: 16px;
+}
+
+.nav-list__button {
+  display: block;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $color-white;
+  text-align: end;
+}

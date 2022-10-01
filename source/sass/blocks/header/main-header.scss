@@ -1,0 +1,31 @@
+.main-header {
+  background-color: $color-background-first;
+}
+
+.main-header__wrapper {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.main-header__logo-image {
+  display: block;
+}
+
+.main-header__phone {
+  @include link-reset;
+  display: flex;
+  color: $color-text-second;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main-header__phone-icon {
+  margin-left: 4px;
+}
