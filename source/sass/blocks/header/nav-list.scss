@@ -16,3 +16,34 @@
   color: $color-white;
   text-align: end;
 }
+
+@media (min-width: $tablet-width) {
+  .nav-list {
+    display: flex;
+    margin-left: 45px;
+    flex-wrap: wrap;
+  }
+
+  .nav-list__item {
+    margin-bottom: 0;
+  }
+
+  .nav-list__button {
+    margin: 0;
+    padding: 8px 12px;
+    line-height: 20px;
+    text-decoration: none;
+    color: $color-text-second;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    margin-left: 90px;
+  }
+
+  .nav-list__button {
+    padding: 8px 16px;
+  }
+}

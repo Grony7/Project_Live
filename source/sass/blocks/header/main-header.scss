@@ -29,3 +29,33 @@
 .main-header__phone-icon {
   margin-left: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-header__wrapper {
+    padding: 22px 80px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .main-header__logo {
+    order: 1;
+  }
+
+  .main-header__logo-image {
+    width: 113px;
+    height: 36px;
+  }
+
+  .main-header__phone {
+    margin-left: auto;
+    order: 3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header__wrapper {
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 1440px;
+  }
+}
