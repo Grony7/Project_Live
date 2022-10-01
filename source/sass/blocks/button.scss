@@ -1,0 +1,31 @@
+.button {
+  width: 320px;
+  height: 56px;
+  padding: 20px 19px;
+  font-family: "Monserrat", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(180deg, #FFA96B -21.43%, #EE7A28 100%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  @media (min-width: 1024px) {
+    width: 366px;
+    height: 64px;
+
+    &:hover {
+      background: linear-gradient(180deg, #FFA96B 58.75%, #EE7A28 173.44%);
+    }
+
+    &:active {
+      width: 320px;
+      height: 56px;
+      margin: 4px 23px;
+    }
+  }
+}
