@@ -1,16 +1,16 @@
 //Global
-@import "common/variable.scss";
-@import "common/mixins.scss";
-@import "global.scss";
+@import "common/variable";
+@import "common/mixins";
+@import "global";
 @import "blocks/main/button";
 
 //Nav
-@import "blocks/header/main-header.scss";
-@import "blocks/header/main-nav.scss";
-@import "blocks/header/nav-list.scss";
+@import "blocks/header/main-header";
+@import "blocks/header/main-nav";
+@import "blocks/header/nav-list";
 
 //Main
-@import "blocks/main/main-container.scss";
+@import "blocks/main/main-container";
 @import "blocks/main/title";
 
 @font-face {
