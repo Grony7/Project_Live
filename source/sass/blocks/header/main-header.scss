@@ -1,5 +1,7 @@
+@use "common/forwarded.scss" as f;
+
 .main-header {
-  background-color: $color-background-first;
+  background-color: f.$color-background-first;
 }
 
 .main-header__wrapper {
@@ -18,33 +20,33 @@
 }
 
 .main-header__phone {
-  @include link-reset;
+  @include f.link-reset;
   display: flex;
-  color: $color-text-second;
+  color: f.$color-text-second;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
 
   &:hover {
-    color: $color-text-first;
+    color: f.$color-text-first;
     opacity: 0.7;
   }
 
   &:active {
-    color: $color-accent;
+    color: f.$color-accent;
 
     & .main-header__phone-icon {
-      fill: $color-accent;
+      fill: f.$color-accent;
     }
   }
 }
 
 .main-header__phone-icon {
   margin-left: 4px;
-  fill: $color-text-second;
+  fill: f.$color-text-second;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: f.$tablet-width) {
   .main-header__wrapper {
     padding: 22px 80px;
     align-items: center;
@@ -66,7 +68,7 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: f.$desktop-width) {
   .main-header__wrapper {
     padding-left: 100px;
     padding-right: 100px;

@@ -1,3 +1,5 @@
+@use "common/forwarded.scss" as f;
+
 .main-nav__toggle {
   position: absolute;
   top: 9px;
@@ -11,7 +13,7 @@
   background-color: transparent;
   box-sizing: border-box;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: f.$tablet-width) {
     display: none;
   }
 }
@@ -23,8 +25,8 @@
   left: 50%;
   width: 20px;
   height: 2px;
-  background-color: $color-accent;
-  box-shadow: 0 6px 0 0 $color-accent, 0 -6px 0 0 $color-accent;
+  background-color: f.$color-accent;
+  box-shadow: 0 6px 0 0 f.$color-accent, 0 -6px 0 0 f.$color-accent;
   transform: translate(-50%, -50%);
 }
 
@@ -37,7 +39,7 @@
     left: 4px;
     width: 27px;
     height: 2px;
-    background-color: $color-accent;
+    background-color: f.$color-accent;
   }
 
   &::before {
@@ -50,12 +52,12 @@
   }
 }
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: f.$mobile-width-only) {
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
     display: block;
     width: 100vw;
-    height: 100vw;
+    height: calc(100vh - 52px);
     top: 52px;
     right: 0;
     z-index: 10;
@@ -82,7 +84,7 @@
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: f.$tablet-width) {
   .main-nav {
     order: 2;
   }
